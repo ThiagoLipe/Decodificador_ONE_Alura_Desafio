@@ -1,0 +1,163 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+* {
+  box-sizing: border-box;
+  background: #020424;
+  font-family: "Kode Mono", monospace;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 2rem;
+}
+
+.Logo {
+  margin-left: 2.75rem;
+  padding-top: 1.5rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.375rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-area {
+  border: none;
+  color: white;
+  margin-top: 5.625rem;
+  text-transform: lowercase;
+}
+
+.text-area::placeholder {
+  color: white;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem;
+  width: 25rem;
+  height: 100%;
+  border-radius: 2rem;
+  background: white;
+}
+
+.mensagem {
+  width: 23rem;
+  height: 100%;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 2rem;
+  background: #929292;
+  color:#f3f5fc;
+}
+
+.mensagem:focus {
+  outline: none;
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 12.5rem;
+}
+
+.informacao h6 {
+  color: #fbff00;
+  font-family: "Kode Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.botoes {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  gap: 5rem;
+  margin-top: 1.125rem;
+  position: relative;
+  bottom: 0;
+}
+
+.btn-encriptar {
+  display: flex;
+  padding: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 20.5rem;
+  border-radius: 1.5rem;
+  background: #058505;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.btn-encriptar:hover {
+  background-color: rgb(116, 211, 131);
+}
+
+.btn-desencriptar {
+  display: flex;
+  padding: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 20.5rem;
+  border-radius: 1.5rem;
+  background: #d8dfe8;
+  color: #000000;
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.35s ease;
+  border-style: none;
+}
+
+.btn-desencriptar:hover {
+  background-color: #2968e6;
+}
+
+.btn-copiar {
+  display: flex;
+  width: 21rem;
+  padding: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  bottom: 0;
+  border-radius: 1.5rem;
+  border-style: none;
+
+  color: #ffffff;
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.btn-copiar:hover {
+  background-color: #79da79;
+  color: #000000;
+}
